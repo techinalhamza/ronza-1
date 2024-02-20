@@ -17,3 +17,17 @@
 .container-fluid{
   padding: 0 5%;
 }
+body {
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  /* background: #020C12;
+  color: white; */
+  overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  overflow-x: hidden;
+}

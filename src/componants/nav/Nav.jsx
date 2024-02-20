@@ -47,10 +47,10 @@ function Nav() {
           </div>
           <div className="col-7 navigation-menu border cursor flex items-center justify-center   text-base text-black ">
             <Button>
-              <NavLink>home</NavLink>
+              <NavLink to="/">home</NavLink>
             </Button>
             <Button>
-              <NavLink>about</NavLink>
+              <NavLink to="/about">about</NavLink>
             </Button>
             <Button>
               <NavLink>shop</NavLink>
