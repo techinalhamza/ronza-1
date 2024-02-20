@@ -8,13 +8,13 @@ function MegaMenu() {
   return (
     <>
       <button className="mega-menu " onClick={() => setMegaMenu(!megaMenu)}>
-        <NavLink className="flex items-center justify-center gap-2">
+        <NavLink className="flex items-center justify-center gap-2 text-sm">
           mega menu
           {megaMenu ? <IoMdArrowDropdown /> : <IoMdArrowDropright />}
         </NavLink>
       </button>
       {megaMenu === true && (
-        <div className="mega-menu-btn static ">
+        <div className="mega-menu-btn static z-10">
           <div className="mega-menu-content w-full left-0 top-[100%] h-max absolute py-4 shadow-md bg-[#ffffff]">
             <div className="row">
               <div className="col-3 ">

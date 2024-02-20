@@ -31,10 +31,13 @@ function Nav() {
             {categoryDropdown === true && (
               <div className="category-dropdown absolute top-[100%] w-full shadow-md  bg-[#FFFFFF] z-50 overflow-hidden">
                 <div className="row gap- border border-[#3BB77D]">
-                  {categoryData.map((val) => {
+                  {categoryData.map((val, index) => {
                     return (
                       <>
-                        <div className="col-6 flex gap-2 my-4 border py-2 ">
+                        <div
+                          key={index}
+                          className="col-6 flex gap-2 my-4 border py-2 "
+                        >
                           <img src={val.img} alt="" className="w-8" />
                           <p>{val.title}</p>
                         </div>

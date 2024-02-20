@@ -19,9 +19,7 @@
 }
 body {
   text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  /* background: #020C12;
-  color: white; */
+    font-family: "Quicksand", sans-serif;
   overflow: hidden;
   position: relative;
   overflow-x: hidden;
@@ -30,4 +28,8 @@ body {
 
 html {
   overflow-x: hidden;
+}
+.hd{
+  font-size: 30px;
+  font-weight: bold;
 }

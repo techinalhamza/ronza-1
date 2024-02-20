@@ -1,0 +1,18 @@
+.filter-tabs ul li {
+  font-weight: 700;
+  padding-right: 2rem;
+}
+.filter-tabs ul li.active {
+  color: #3bb77e;
+}
+.filter-tabs ul li:hover {
+  color: #3bb77e;
+}
+
+/* -------------- css for product section --------------- */
+.product-box .item {
+  border: 2px solid red;
+  width: 20%;
+  height: 400px;
+  margin-right: 2rem;
+}
