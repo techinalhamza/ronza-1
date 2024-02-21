@@ -42,7 +42,22 @@ function Home() {
               </ul>
             </div>
           </div>
-          <div className="product-box mt-8 flex items-center">
+          <div className="product-box mt-8 flex items-center flex-wrap">
+            <div className="item">
+              <Product />
+            </div>
+            <div className="item">
+              <Product />
+            </div>
+            <div className="item">
+              <Product />
+            </div>
+            <div className="item">
+              <Product />
+            </div>
+            <div className="item">
+              <Product />
+            </div>
             <div className="item">
               <Product />
             </div>
