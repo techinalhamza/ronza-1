@@ -20,7 +20,10 @@ function CatSlider() {
     slidesToShow: 8,
     slidesToScroll: 1,
     arrows: true,
-    // fade: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    centerMode: true,
+    centerPadding: "60px",
   };
   return (
     <>

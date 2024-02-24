@@ -6,12 +6,17 @@ import "./Product.css";
 import { FaRegHeart, FaRegEye } from "react-icons/fa";
 import { MdOutlineCompareArrows } from "react-icons/md";
 
-function Product() {
+function Product(props) {
   return (
     <>
       <div className="product-container">
-        <div className="container-fluid">
-          <div className="product-row">
+        <div className="container-flui">
+          <div className="product-row relative p- container-fluid">
+            <div
+              className={`badge  py-2  px-3  rounded-tr-3xl rounded-bl-3xl left-0  bg-black absolute  z-10 rounded-none ${props.tag}`}
+            >
+              {props.tag}
+            </div>
             <div className="product-img px-6 py-6 relative">
               <img src={product1} alt="" className="w-full" />
               <div className="img-overlay ">
@@ -19,7 +24,7 @@ function Product() {
                   <li tooltip="Add to Wishlist">
                     <FaRegHeart />
                   </li>
-                  <li tooltip="Compare!">
+                  <li tooltip="Compare! border border-red-200">
                     <MdOutlineCompareArrows />
                   </li>
                   <li tooltip="Quick View">

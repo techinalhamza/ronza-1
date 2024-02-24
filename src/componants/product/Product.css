@@ -21,13 +21,14 @@
   height: 30px;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   /* border: 1px solid #f2fce4; */
   border-radius: 7px;
-  translate: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* overflow: hidden; */
+  /* translate: 60px; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   opacity: 0;
   transition: all.4s ease;
   visibility: collapse;
@@ -42,7 +43,7 @@
   height: 100%;
   font-size: 14px;
   text-align: center;
-  border: 1px solid #ecffec;
+  /* border: 1px solid #7bbe7b; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +52,18 @@
 .product-img .img-overlay ul li:hover {
   color: black;
 }
-
+.badge.hot {
+  background: #e98868 !important;
+}
+.badge.new {
+  background: #88e688 !important;
+}
+.badge.top {
+  background: #63acce !important;
+}
+.badge.sale {
+  background: #ac9a35 !important;
+}
 /* ---------------- tooltip css-------------------- */
 
 [tooltip] {
