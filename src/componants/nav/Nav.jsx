@@ -14,7 +14,6 @@ function Nav() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let position = window.pageYOffset;
-      // console.log(position);
       if (position > 100) {
         navRef.current.classList.add("fixed");
       } else {

@@ -24,7 +24,7 @@ function Product(props) {
                   <li tooltip="Add to Wishlist">
                     <FaRegHeart />
                   </li>
-                  <li tooltip="Compare! border border-red-200">
+                  <li tooltip="Compare! ">
                     <MdOutlineCompareArrows />
                   </li>
                   <li tooltip="Quick View">

@@ -8,6 +8,7 @@ import FooterBnner from "./componants/footer-banner/FooterBnner";
 import Footer from "./componants/footer/Footer";
 import ShopListing from "./pages/listing/Listing";
 import About from "./pages/about-page/About";
+import SingleProduct from "./pages/single-Product-Page/SingleProduct";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="listing" element={<ShopListing />} />
         <Route path="about" element={<About />} />
+        <Route path="singleProduct" element={<SingleProduct />} />
       </Routes>
       <FooterBnner />
       <Footer />
