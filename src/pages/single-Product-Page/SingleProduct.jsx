@@ -15,6 +15,7 @@ import Slider from "react-slick";
 
 function SingleProduct() {
   const [inpVal, setInpVal] = useState(0);
+  const [showImage, setShowImage] = useState("src/assets/product1.jpg");
 
   const increment = () => {
     if (inpVal < 10) {
@@ -45,11 +46,15 @@ function SingleProduct() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     // autoplay: true,
     // autoplaySpeed: 1500,
     // centerMode: true,
     // centerPadding: "60px",
+  };
+  const helo = (det) => {
+    console.log(det.target.src);
+    setShowImage(det.target.src);
   };
   return (
     <>
@@ -79,11 +84,12 @@ function SingleProduct() {
                       <InnerImageZoom
                         zoomType="hover"
                         zoomScale={0.8}
-                        src="src/assets/product1.jpg"
+                        // src="src/assets/product1.jpg"
+                        src={showImage}
                         width={1000}
                       />
                     </div>
-                    <div className="img-slider ">
+                    <div className="img-slider bg-red-400 h-min" onClick={helo}>
                       <Slider {...settings}>
                         {productImages.map((imageUrl, index) => (
                           <img

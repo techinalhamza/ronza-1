@@ -10,18 +10,9 @@ import FooterBnner from "./componants/footer-banner/FooterBnner";
 import Footer from "./componants/footer/Footer";
 import ShopListing from "./pages/listing/Listing";
 import App from "./App";
+import { AppProvider } from "./context/productContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <BrowserRouter>
-  //   <Header />
-  //   <Nav />
-  //   <Routes>
-  //     <Route path="/" element={<Home />} />
-  //     <Route path="listing" element={<ShopListing />} />
-  //   </Routes>
-  //   <FooterBnner />
-  //   <Footer />
-  // </BrowserRouter>
-  <React.StrictMode>
+  <AppProvider>
     <App />
-  </React.StrictMode>
+  </AppProvider>
 );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import HomeSlider from "./HomeSlider";
 import CatSlider from "../../componants/catSlider/CatSlider";
 import Banner from "../../componants/banner/Banner";
@@ -9,6 +9,7 @@ import "../../componants/product/Product.css";
 import banner4 from "../../assets/banner4.jpg";
 import Slider from "react-slick";
 import Foods from "../../componants/foods/Foods";
+import { useProductContext } from "../../context/productContext";
 
 function Home() {
   var settings = {
@@ -26,10 +27,12 @@ function Home() {
 
     // fade: true,
   };
+  const fName = useProductContext();
   return (
     <>
       <HomeSlider />
       <CatSlider />
+      <h1>{fName}</h1>
       <Banner />
 
       <div className="product-container  mt-8">
